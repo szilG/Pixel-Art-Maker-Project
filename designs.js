@@ -18,9 +18,7 @@ function makeGrid(){
     
     
 //remove all children from canvas when submit button gets called to clean the canvas
-  while (canvas.firstChild) {
-    canvas.removeChild(canvas.firstChild);
-  }
+ canvas.innerHTML = ""
   //Loop for height and add tr to canvas
   for (s = 0; s < height; s++) {
     var row = document.createElement("tr");
